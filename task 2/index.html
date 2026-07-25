@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Mithilesh</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="todo-app">
+        <h2>My Task List 📝</h2>
+        <p class="subtitle">InternSpark Internship - Task 2</p>
+
+        <!-- Input Area -->
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task here..." />
+            <button id="addBtn">Add Task</button>
+        </div>
+
+        <!-- Task Stats -->
+        <div class="stats-bar">
+            <span>Total Tasks: <strong id="totalCount">0</strong></span>
+            <button id="clearAllBtn" class="clear-btn">Clear All</button>
+        </div>
+
+        <!-- List Container -->
+        <ul id="taskList" class="task-list">
+            <!-- Tasks will be added dynamically -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
