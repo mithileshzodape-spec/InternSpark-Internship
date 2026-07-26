@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithilesh Zodape - Portfolio</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Mithilesh.dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Hi, I'm <span class="text-warning">Mithilesh Zodape</span></h1>
+            <p class="lead text-light">Frontend Developer Intern @ InternSpark</p>
+            <a href="#projects" class="btn btn-warning btn-lg mt-3 fw-semibold">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">My Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card skill-card text-center p-3 border-0 shadow-sm">
+                        <h5 class="fw-bold">HTML5 & CSS3</h5>
+                        <p class="text-muted small mb-0">Web Layouts & Styling</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card skill-card text-center p-3 border-0 shadow-sm">
+                        <h5 class="fw-bold">Bootstrap 5</h5>
+                        <p class="text-muted small mb-0">Responsive Design</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card skill-card text-center p-3 border-0 shadow-sm">
+                        <h5 class="fw-bold">JavaScript</h5>
+                        <p class="text-muted small mb-0">DOM Manipulation</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card skill-card text-center p-3 border-0 shadow-sm">
+                        <h5 class="fw-bold">Git & GitHub</h5>
+                        <p class="text-muted small mb-0">Version Control</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Featured Projects</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/350x200?text=Portfolio+Website" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Personal Portfolio</h5>
+                            <p class="card-text text-muted">Mobile-friendly portfolio website created using HTML, CSS, and Bootstrap 5.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/350x200?text=Landing+Page" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Product Landing Page</h5>
+                            <p class="card-text text-muted">A modern product showcase page with smooth navigation and clean UI.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/350x200?text=JS+Interactive+App" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Interactive Web App</h5>
+                            <p class="card-text text-muted">Dynamic web layout featuring form validations and interactive UI elements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 section-title">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="contactForm" class="p-4 bg-white rounded shadow-sm">
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Email</label>
+                            <input type="email" class="form-control" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Message</label>
+                            <textarea class="form-control" rows="4" placeholder="Type your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 fw-semibold">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0 small">&copy; 2026 Mithilesh Zodape | Candidate ID: IS-2026-15288. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

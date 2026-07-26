@@ -1,0 +1,35 @@
+/* Custom Styles for Mithilesh's Portfolio */
+:root {
+    --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --hero-bg: #0f172a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--main-font);
+    padding-top: 56px; /* Offset for fixed navbar */
+}
+
+/* Hero Section Styling */
+.hero-section {
+    height: 85vh;
+    background-color: var(--hero-bg);
+}
+
+/* Section Headings */
+.section-title {
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Hover effects for skill cards */
+.skill-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
